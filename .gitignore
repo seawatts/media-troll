@@ -1,8 +1,8 @@
 node_modules
 public
 .tmp
-.sass-cache
-.idea
+.idea/workspace.xml
+.idea/tasks.xml
 client/bower_components
 dist
 /server/config/local.env.js
