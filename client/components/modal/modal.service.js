@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('torrentManagerApp')
+angular.module('mediaTrollApp')
   .factory('Modal', function ($rootScope, $modal) {
     /**
      * Opens a modal

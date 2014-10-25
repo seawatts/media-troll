@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Grunt Serve" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/Cellar/node/0.10.26/bin/node" path-to-js-file="/usr/local/bin/grunt" application-parameters="--verbose serve:intellij" working-dir="$PROJECT_DIR$">
+    <browser start="true" with-js-debugger="true" url="http://localhost:9000/" />
+    <RunnerSettings RunnerId="Basic" />
+    <RunnerSettings RunnerId="debuggableProgram" />
+    <ConfigurationWrapper RunnerId="Basic" />
+    <ConfigurationWrapper RunnerId="debuggableProgram" />
+    <method />
+  </configuration>
+</component>

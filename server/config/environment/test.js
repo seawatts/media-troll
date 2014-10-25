@@ -5,6 +5,6 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/torrentmanager-test'
+    uri: 'mongodb://localhost/mediatroll-test'
   }
 };

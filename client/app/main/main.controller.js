@@ -1,27 +1,27 @@
 'use strict';
 
-angular.module('torrentManagerApp')
+angular.module('mediaTrollApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
-    $scope.awesomeThings = [];
+    $scope.torrents = [];
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-      socket.syncUpdates('thing', $scope.awesomeThings);
+    $http.get('/api/torrents').success(function(torrents) {
+      $scope.torrents = torrents;
+      socket.syncUpdates('torrent', $scope.torrents);
     });
 
-    $scope.addThing = function() {
-      if($scope.newThing === '') {
+    $scope.addTorrent = function() {
+      if($scope.newTorrent === '') {
         return;
       }
-      $http.post('/api/things', { name: $scope.newThing });
-      $scope.newThing = '';
+      $http.post('/api/torrents', { name: $scope.newTorrent });
+      $scope.newTorrent = '';
     };
 
-    $scope.deleteThing = function(thing) {
-      $http.delete('/api/things/' + thing._id);
+    $scope.deleteTorrent = function(torrent) {
+      $http.delete('/api/torrents/' + torrent._id);
     };
 
     $scope.$on('$destroy', function () {
-      socket.unsyncUpdates('thing');
+      socket.unsyncUpdates('torrent');
     });
   });

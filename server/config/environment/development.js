@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/torrentmanager-dev'
+    uri: 'mongodb://localhost/mediatroll-dev'
   },
 
   seedDB: true

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('torrentManagerApp', [
+angular.module('mediaTrollApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',

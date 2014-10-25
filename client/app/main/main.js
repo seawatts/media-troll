@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('torrentManagerApp')
+angular.module('mediaTrollApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('main', {

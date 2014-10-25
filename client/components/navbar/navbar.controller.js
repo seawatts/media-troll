@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('torrentManagerApp')
+angular.module('mediaTrollApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
